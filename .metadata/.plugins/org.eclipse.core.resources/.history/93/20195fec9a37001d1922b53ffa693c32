@@ -1,0 +1,24 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class DesafioCalculadora {
+	public static void main(String[] args) {
+		// ler num1
+		// ler num2
+		// + - * / %
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		int num1 = entrada.nextInt();
+		int num2 = entrada.nextInt();
+		String operacao = entrada.next();
+		
+		boolean soma = operacao == "+";
+		boolean resultadoFinal = operacao == "-";
+		
+			System.out.println("Resultado: " + resultadoFinal);
+		
+		entrada.close();
+	}
+}

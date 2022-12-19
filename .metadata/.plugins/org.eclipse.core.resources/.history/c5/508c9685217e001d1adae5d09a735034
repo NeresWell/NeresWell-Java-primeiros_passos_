@@ -1,0 +1,19 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DoWhile {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		do {
+			System.out.println("palavra: ");
+			String palavra = sc.next();
+			
+		} while ();
+		
+		System.out.println("Obrigado.");
+		sc.close();
+	}
+}

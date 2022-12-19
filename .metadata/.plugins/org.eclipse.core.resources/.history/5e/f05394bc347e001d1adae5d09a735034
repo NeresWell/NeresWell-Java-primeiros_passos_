@@ -1,0 +1,33 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DesafioWhile {
+
+	public static void main(String[] args) {
+		// calcular media de alunos totalNotasDigitadas / notasValidasdigitadas
+		// digitar nota valida 0 a 10
+		// avisar nota invalida
+		// variavel para contar notas validas para calcular a media
+		// calcular media
+		// sair digitar -1
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double notasValidasdigitadas = 0;
+		double totalNotasDigitadas = 0;
+		
+		double nota = sc.nextDouble();
+		while (nota >= 0 && nota <= 10) {
+			nota = sc.nextDouble();
+			totalNotasDigitadas = totalNotasDigitadas + nota;
+			notasValidasdigitadas +=1;
+		}
+		
+		System.out.println(totalNotasDigitadas);
+		System.out.println(notasValidasdigitadas);
+		System.out.println(nota);
+		
+		sc.close();
+	}
+}
