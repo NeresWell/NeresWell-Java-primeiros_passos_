@@ -1,5 +1,6 @@
 package arrays;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class DesafioArray {
@@ -16,14 +17,21 @@ public class DesafioArray {
 		int qtdNotas = sc.nextInt();
 		double[] notas = new double[qtdNotas];
 		
-		for (int i = 0; i < qtdNotas; i++) {
-			System.out.print("digite a nota: " );
+		for (int i = 0; i < notas.length; i++) {
+			System.out.print("digite a nota "+ (i+1) +": " );
 			notas[i] = sc.nextDouble();
 		}
 		
-		for (int i = 0; i < qtdNotas; i++) {
-			System.out.print(notas[i] + " ");
+		double soma = 0;
+		for(double nota: notas) {
+			soma += nota;
 		}
+//		for (int i = 0; i < notas.length; i++) {
+//			soma += notas[i];
+//		}
+		
+		System.out.println("Média: " + (soma / qtdNotas));
+		System.out.println(Arrays.toString(notas));
 		
 		sc.close();
 	}
